@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CondominiumManagementSystemDBModelStoreContainer" CdmEntityContainer="CondominiumManagementSystemDBEntities">
+    <EntitySetMapping Name="tblExpenses">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblExpense">
+        <MappingFragment StoreEntitySet="tblExpense">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="PaidBy" ColumnName="PaidBy" />
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="ExpenseReasonID" ColumnName="ExpenseReasonID" />
+          <ScalarProperty Name="PaidDate" ColumnName="PaidDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblExpenseReasons">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblExpenseReason">
+        <MappingFragment StoreEntitySet="tblExpenseReason">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblGenders">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblGender">
+        <MappingFragment StoreEntitySet="tblGender">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TItle" ColumnName="TItle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHouses">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblHouse">
+        <MappingFragment StoreEntitySet="tblHouse">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="SubCityID" ColumnName="SubCityID" />
+          <ScalarProperty Name="WoredaID" ColumnName="WoredaID" />
+          <ScalarProperty Name="BlockNumber" ColumnName="BlockNumber" />
+          <ScalarProperty Name="FloorNumber" ColumnName="FloorNumber" />
+          <ScalarProperty Name="HouseNumber" ColumnName="HouseNumber" />
+          <ScalarProperty Name="GovernmentTransferedDate" ColumnName="GovernmentTransferedDate" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHouseOwners">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblHouseOwner">
+        <MappingFragment StoreEntitySet="tblHouseOwner">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HouseID" ColumnName="HouseID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="OwnershipDate" ColumnName="OwnershipDate" />
+          <ScalarProperty Name="SoldDate" ColumnName="SoldDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHousePayments">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblHousePayment">
+        <MappingFragment StoreEntitySet="tblHousePayment">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HouseID" ColumnName="HouseID" />
+          <ScalarProperty Name="PayerFullname" ColumnName="PayerFullname" />
+          <ScalarProperty Name="PaymentReasonID" ColumnName="PaymentReasonID" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMaritalStatus">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblMaritalStatu">
+        <MappingFragment StoreEntitySet="tblMaritalStatus">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TItle" ColumnName="TItle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOwners">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblOwner">
+        <MappingFragment StoreEntitySet="tblOwner">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+          <ScalarProperty Name="CompleteAddress" ColumnName="CompleteAddress" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="MaritalStatusID" ColumnName="MaritalStatusID" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPaymentReasons">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblPaymentReason">
+        <MappingFragment StoreEntitySet="tblPaymentReason">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRegions">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblRegion">
+        <MappingFragment StoreEntitySet="tblRegion">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TItle" ColumnName="TItle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRoles">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblRole">
+        <MappingFragment StoreEntitySet="tblRole">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSubCities">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblSubCity">
+        <MappingFragment StoreEntitySet="tblSubCity">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="TItle" ColumnName="TItle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsers">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblUser">
+        <MappingFragment StoreEntitySet="tblUser">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserRoles">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblUserRole">
+        <MappingFragment StoreEntitySet="tblUserRole">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblWoredas">
+      <EntityTypeMapping TypeName="CondominiumManagementSystemDBModel.tblWoreda">
+        <MappingFragment StoreEntitySet="tblWoreda">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SubCityID" ColumnName="SubCityID" />
+          <ScalarProperty Name="TItle" ColumnName="TItle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

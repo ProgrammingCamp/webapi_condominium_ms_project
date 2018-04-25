@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CondominiumManagementSystemDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblExpense">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PaidTo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PaidBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PaidAmount" Type="money" Nullable="false" />
+    <Property Name="ExpenseReasonID" Type="int" Nullable="false" />
+    <Property Name="PaidDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblExpenseReason">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblGender">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TItle" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblHouse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="SubCityID" Type="int" Nullable="false" />
+    <Property Name="WoredaID" Type="int" Nullable="false" />
+    <Property Name="BlockNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FloorNumber" Type="int" Nullable="false" />
+    <Property Name="HouseNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GovernmentTransferedDate" Type="date" Nullable="false" />
+    <Property Name="SiteName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblHouseOwner">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HouseID" Type="int" Nullable="false" />
+    <Property Name="OwnerID" Type="int" Nullable="false" />
+    <Property Name="OwnershipDate" Type="date" Nullable="false" />
+    <Property Name="SoldDate" Type="date" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblHousePayment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HouseID" Type="int" Nullable="false" />
+    <Property Name="PayerFullname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PaymentReasonID" Type="int" Nullable="false" />
+    <Property Name="PaymentDate" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PaymentAmount" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblMaritalStatus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TItle" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblOwner">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GenderID" Type="int" Nullable="false" />
+    <Property Name="CompleteAddress" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MobileNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MaritalStatusID" Type="int" Nullable="false" />
+    <Property Name="BirthDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPaymentReason">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblRegion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TItle" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblSubCity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="TItle" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUserRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblWoreda">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubCityID" Type="int" Nullable="false" />
+    <Property Name="TItle" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tblExpense_tblExpenseReason">
+    <End Role="tblExpenseReason" Type="Self.tblExpenseReason" Multiplicity="1" />
+    <End Role="tblExpense" Type="Self.tblExpense" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblExpenseReason">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblExpense">
+        <PropertyRef Name="ExpenseReasonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHouse_tblRegion">
+    <End Role="tblRegion" Type="Self.tblRegion" Multiplicity="1" />
+    <End Role="tblHouse" Type="Self.tblHouse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHouse">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHouse_tblSubCity">
+    <End Role="tblSubCity" Type="Self.tblSubCity" Multiplicity="1" />
+    <End Role="tblHouse" Type="Self.tblHouse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubCity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHouse">
+        <PropertyRef Name="SubCityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHouse_tblWoreda">
+    <End Role="tblWoreda" Type="Self.tblWoreda" Multiplicity="1" />
+    <End Role="tblHouse" Type="Self.tblHouse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblWoreda">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHouse">
+        <PropertyRef Name="WoredaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHouseOwner_tblHouse">
+    <End Role="tblHouse" Type="Self.tblHouse" Multiplicity="1" />
+    <End Role="tblHouseOwner" Type="Self.tblHouseOwner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblHouse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHouseOwner">
+        <PropertyRef Name="HouseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHouseOwner_tblOwner">
+    <End Role="tblOwner" Type="Self.tblOwner" Multiplicity="1" />
+    <End Role="tblHouseOwner" Type="Self.tblHouseOwner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblOwner">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHouseOwner">
+        <PropertyRef Name="OwnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHousePayment_tblHouse">
+    <End Role="tblHouse" Type="Self.tblHouse" Multiplicity="1" />
+    <End Role="tblHousePayment" Type="Self.tblHousePayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblHouse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHousePayment">
+        <PropertyRef Name="HouseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHousePayment_tblPaymentReason">
+    <End Role="tblPaymentReason" Type="Self.tblPaymentReason" Multiplicity="1" />
+    <End Role="tblHousePayment" Type="Self.tblHousePayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPaymentReason">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHousePayment">
+        <PropertyRef Name="PaymentReasonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblOwner_tblGender">
+    <End Role="tblGender" Type="Self.tblGender" Multiplicity="1" />
+    <End Role="tblOwner" Type="Self.tblOwner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblGender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblOwner">
+        <PropertyRef Name="GenderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblOwner_tblMaritalStatus">
+    <End Role="tblMaritalStatus" Type="Self.tblMaritalStatus" Multiplicity="1" />
+    <End Role="tblOwner" Type="Self.tblOwner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMaritalStatus">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblOwner">
+        <PropertyRef Name="MaritalStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblSubCity_tblRegion">
+    <End Role="tblRegion" Type="Self.tblRegion" Multiplicity="1" />
+    <End Role="tblSubCity" Type="Self.tblSubCity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblSubCity">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUserRole_tblRole">
+    <End Role="tblRole" Type="Self.tblRole" Multiplicity="1" />
+    <End Role="tblUserRole" Type="Self.tblUserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRole">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblUserRole">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUserRole_tblUser">
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="1" />
+    <End Role="tblUserRole" Type="Self.tblUserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUser">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblUserRole">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblWoreda_tblSubCity">
+    <End Role="tblSubCity" Type="Self.tblSubCity" Multiplicity="1" />
+    <End Role="tblWoreda" Type="Self.tblWoreda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubCity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblWoreda">
+        <PropertyRef Name="SubCityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CondominiumManagementSystemDBModelStoreContainer">
+    <EntitySet Name="tblExpense" EntityType="Self.tblExpense" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblExpenseReason" EntityType="Self.tblExpenseReason" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblGender" EntityType="Self.tblGender" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblHouse" EntityType="Self.tblHouse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblHouseOwner" EntityType="Self.tblHouseOwner" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblHousePayment" EntityType="Self.tblHousePayment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMaritalStatus" EntityType="Self.tblMaritalStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblOwner" EntityType="Self.tblOwner" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPaymentReason" EntityType="Self.tblPaymentReason" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRegion" EntityType="Self.tblRegion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRole" EntityType="Self.tblRole" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSubCity" EntityType="Self.tblSubCity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserRole" EntityType="Self.tblUserRole" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblWoreda" EntityType="Self.tblWoreda" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tblExpense_tblExpenseReason" Association="Self.FK_tblExpense_tblExpenseReason">
+      <End Role="tblExpenseReason" EntitySet="tblExpenseReason" />
+      <End Role="tblExpense" EntitySet="tblExpense" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHouse_tblRegion" Association="Self.FK_tblHouse_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegion" />
+      <End Role="tblHouse" EntitySet="tblHouse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHouse_tblSubCity" Association="Self.FK_tblHouse_tblSubCity">
+      <End Role="tblSubCity" EntitySet="tblSubCity" />
+      <End Role="tblHouse" EntitySet="tblHouse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHouse_tblWoreda" Association="Self.FK_tblHouse_tblWoreda">
+      <End Role="tblWoreda" EntitySet="tblWoreda" />
+      <End Role="tblHouse" EntitySet="tblHouse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHouseOwner_tblHouse" Association="Self.FK_tblHouseOwner_tblHouse">
+      <End Role="tblHouse" EntitySet="tblHouse" />
+      <End Role="tblHouseOwner" EntitySet="tblHouseOwner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHouseOwner_tblOwner" Association="Self.FK_tblHouseOwner_tblOwner">
+      <End Role="tblOwner" EntitySet="tblOwner" />
+      <End Role="tblHouseOwner" EntitySet="tblHouseOwner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHousePayment_tblHouse" Association="Self.FK_tblHousePayment_tblHouse">
+      <End Role="tblHouse" EntitySet="tblHouse" />
+      <End Role="tblHousePayment" EntitySet="tblHousePayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHousePayment_tblPaymentReason" Association="Self.FK_tblHousePayment_tblPaymentReason">
+      <End Role="tblPaymentReason" EntitySet="tblPaymentReason" />
+      <End Role="tblHousePayment" EntitySet="tblHousePayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblOwner_tblGender" Association="Self.FK_tblOwner_tblGender">
+      <End Role="tblGender" EntitySet="tblGender" />
+      <End Role="tblOwner" EntitySet="tblOwner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblOwner_tblMaritalStatus" Association="Self.FK_tblOwner_tblMaritalStatus">
+      <End Role="tblMaritalStatus" EntitySet="tblMaritalStatus" />
+      <End Role="tblOwner" EntitySet="tblOwner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblSubCity_tblRegion" Association="Self.FK_tblSubCity_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegion" />
+      <End Role="tblSubCity" EntitySet="tblSubCity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUserRole_tblRole" Association="Self.FK_tblUserRole_tblRole">
+      <End Role="tblRole" EntitySet="tblRole" />
+      <End Role="tblUserRole" EntitySet="tblUserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUserRole_tblUser" Association="Self.FK_tblUserRole_tblUser">
+      <End Role="tblUser" EntitySet="tblUser" />
+      <End Role="tblUserRole" EntitySet="tblUserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblWoreda_tblSubCity" Association="Self.FK_tblWoreda_tblSubCity">
+      <End Role="tblSubCity" EntitySet="tblSubCity" />
+      <End Role="tblWoreda" EntitySet="tblWoreda" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,10 @@
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\DataAccessLogic\bin\Debug\DataAccessLogic.dll.config
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\DataAccessLogic\bin\Debug\DataAccessLogic.dll
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\DataAccessLogic\bin\Debug\DataAccessLogic.pdb
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\DataAccessLogic\bin\Debug\EntityFramework.dll
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\DataAccessLogic\bin\Debug\EntityFramework.SqlServer.dll
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\DataAccessLogic\bin\Debug\EntityFramework.xml
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\DataAccessLogic\bin\Debug\EntityFramework.SqlServer.xml
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\DataAccessLogic\obj\Debug\DataAccessLogic.csprojResolveAssemblyReference.cache
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\DataAccessLogic\obj\Debug\DataAccessLogic.dll
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\DataAccessLogic\obj\Debug\DataAccessLogic.pdb

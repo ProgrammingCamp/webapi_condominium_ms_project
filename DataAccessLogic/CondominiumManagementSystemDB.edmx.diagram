@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0974a02e05d447d2ab194d03dfe0ea0b" Name="Diagram1">
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblExpense" Width="1.5" PointX="14" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblExpenseReason" Width="1.5" PointX="11.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblGender" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblHouse" Width="1.5" PointX="7.5" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblHouseOwner" Width="1.5" PointX="9.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblHousePayment" Width="1.5" PointX="12.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblMaritalStatu" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblOwner" Width="1.5" PointX="7.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblPaymentReason" Width="1.5" PointX="10.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblRegion" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblRole" Width="1.5" PointX="9.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblSubCity" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblUser" Width="1.5" PointX="9.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblUserRole" Width="1.5" PointX="12" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CondominiumManagementSystemDBModel.tblWoreda" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblExpense_tblExpenseReason" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblOwner_tblGender" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHouse_tblRegion" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHouse_tblSubCity" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHouse_tblWoreda" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHouseOwner_tblHouse" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHousePayment_tblHouse" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHouseOwner_tblOwner" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblHousePayment_tblPaymentReason" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblOwner_tblMaritalStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblSubCity_tblRegion" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblUserRole_tblRole" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblWoreda_tblSubCity" ManuallyRouted="false" />
+        <AssociationConnector Association="CondominiumManagementSystemDBModel.FK_tblUserRole_tblUser" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

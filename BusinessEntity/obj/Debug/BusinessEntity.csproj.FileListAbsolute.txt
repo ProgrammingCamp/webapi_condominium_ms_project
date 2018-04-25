@@ -1,0 +1,5 @@
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessEntity\bin\Debug\BusinessEntity.dll
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessEntity\bin\Debug\BusinessEntity.pdb
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessEntity\obj\Debug\BusinessEntity.csprojResolveAssemblyReference.cache
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessEntity\obj\Debug\BusinessEntity.dll
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessEntity\obj\Debug\BusinessEntity.pdb

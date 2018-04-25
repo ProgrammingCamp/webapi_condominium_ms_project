@@ -1,0 +1,11 @@
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessLogic\bin\Debug\BusinessLogic.dll
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessLogic\bin\Debug\BusinessLogic.pdb
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessLogic\bin\Debug\BusinessEntity.dll
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessLogic\bin\Debug\DataAccessLogic.dll
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessLogic\bin\Debug\EntityFramework.dll
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessLogic\bin\Debug\BusinessEntity.pdb
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessLogic\bin\Debug\DataAccessLogic.pdb
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessLogic\bin\Debug\EntityFramework.xml
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessLogic\obj\Debug\BusinessLogic.dll
+E:\Programming Camp\WebApi Development Training Projects\Condominium Management System\BusinessLogic\obj\Debug\BusinessLogic.pdb
